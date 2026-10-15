@@ -1,0 +1,57 @@
+# Unique CLI parameters from run_analysisv2.sh (python3 arguments only).
+# case = {name}_P{percentile}_{region}_detrended_object
+# Distinct shell names are kept when the same flag is passed different values.
+
+name: ERA5
+percentile: 95
+region: US
+case: ERA5_P95_US_detrended_object
+t_file: /depot/wanglei/data/Reanalysis/ERA5/Heat_waves/TS_ERA5.nc
+t_file_anoma: /depot/wanglei/data/Reanalysis/ERA5/Heat_waves/outputs_storm_swamp/TS_ERA5_daily_anoma_window.nc
+path_file_t: /depot/wanglei/data/Reanalysis/ERA5/Heat_waves/TS_ERA5.nc
+path_file_t_anom: /depot/wanglei/data/Reanalysis/ERA5/Heat_waves/outputs_storm_swamp/TS_ERA5_daily_anoma_window.nc
+var: TS
+global_mean_file: /depot/wanglei/data/Reanalysis/ERA5/Heat_waves/series_globalMean_TS_daily.nc
+global_mean_var: t
+seasons: true
+topography: true
+methodology: Teng
+initial_year: 1950
+path_case: /home/castanev/RW_amplification_heatwaves/ERA5_P95_US_detrended_object/
+path_outputs: /scratch/negishi/castanev/Amplification_RW/ERA5/
+path_data_heatwaves: /depot/wanglei/data/Reanalysis/ERA5/Heat_waves/
+path_file_precip: /scratch/negishi/zhao1550/data_raw/ERA5/pr/total_precip_daily_r360x181.nc
+name_land: GLEAM
+path_data: /depot/wanglei/data/GLEAM/v4.2/
+path_outputs_land: /scratch/negishi/castanev/GLEAM/
+path_temp: /scratch/negishi/castanev/GLEAM/
+path_outputs_case: /scratch/negishi/castanev/GLEAM/ERA5_P95_US_detrended_object/
+path_case_land: /home/castanev/land_atmosphere/ERA5_P95_US_detrended_object/
+path_file_SMrz: /scratch/negishi/castanev/GLEAM/SMrz_GLEAM_US.nc
+path_file_SMs: /scratch/negishi/castanev/GLEAM/SMs_GLEAM_US.nc
+path_file_EF: /scratch/negishi/castanev/GLEAM/EF_GLEAM_US.nc
+path_file_E: /scratch/negishi/castanev/GLEAM/E_GLEAM_US.nc
+path_file_H: /scratch/negishi/castanev/GLEAM/H_GLEAM_US.nc
+path_file_eof: /scratch/negishi/castanev/GLEAM/EOF_timeseries_daily_anoma_window_smoothed15daysw_SMrz_GLEAM_AprMay_US.nc
+z500_anom_file: /scratch/negishi/castanev/GLEAM/daily_anoma_window_z_ERA5_interpolated.nc
+
+path_bam: /scratch/negishi/castanev/GLEAM/NBAM_1940-2024.nc
+
+
+keep_most_lasting: false
+in_land: true
+min_duration: 5
+lead_start: 90
+lead_end: 60
+min_n: 8
+apr_day_start: 15
+apr_day_end: 30
+response: events
+years: [2012, 2015, 2021]
+events_csv: null
+max_events: null
+E0: 10
+
+path_file_E_recurrent_vanom: /scratch/negishi/castanev/Amplification_RW/ERA5/v250_recurrent_vanom_analytic_signal_6h_NH.nc
+path_file_Cp_recurrent_vanom: /scratch/negishi/castanev/Amplification_RW/ERA5/v250_Cp_recurrent_vanom_6h_NH.nc
+path_file_v_recurrent_vanom: /scratch/negishi/castanev/Amplification_RW/ERA5/v250_recurrent_vanom_filtered_6h_NH.nc
